@@ -1,0 +1,41 @@
+/* list.component.css */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  width: 100%;
+  /* Asegúrate de que cada tarjeta tenga el ancho completo del contenedor de la cuadrícula */
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Centra los elementos verticalmente en el encabezado */
+}
+
+
+
+/* list.component.css */
+
+/* Animación de entrada para la lista */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInAnimation {
+  animation: fadeIn 0.5s ease-out;
+}

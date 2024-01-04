@@ -1,0 +1,48 @@
+<!--
+<div class="container mt-5 ">
+  <div *ngIf="detail" class="row animate__animated animate__bounce animate__fadeIn">
+    <div class="col md-9 ">
+
+      <p><strong>Author:</strong> {{detail.author}}</p>
+
+      <img style="width: 80%; height: 80%;" class="rounded" src="{{detail.download_url}}" alt="photo api">
+    </div>
+    <div class="col-md-3">
+      <a class="btn btn-danger" routerLink="/">Back</a>
+    </div>
+  </div>
+</div>-->
+
+
+<div class="container mt-5">
+  <div *ngIf="detail" class="row animate__animated animate__bounce animate__fadeIn">
+    <div class="col-md-9">
+      <p><strong>Author:</strong> {{detail.author}}</p>
+
+      <img style="width: 80%; height: 80%;" class="rounded" src="{{detail.download_url}}" alt="photo api">
+
+      <!-- Botón "Show all details" para expandir la sección -->
+      <button mat-raised-button color="primary" (click)="expandDetailsPanel()">Show all details</button>
+
+      <!-- Detalles ocultos en un Expansion Panel -->
+      <mat-expansion-panel [expanded]="expanded">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            All Details
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="details-content">
+          <p><strong>ID:</strong> {{detail.id}}</p>
+          <p><strong>Width:</strong> {{detail.width}}</p>
+          <p><strong>Height:</strong> {{detail.height}}</p>
+          <p><strong>URL:</strong> {{detail.url}}</p>
+        </div>
+      </mat-expansion-panel>
+    </div>
+
+    <div class="col-md-3">
+      <a class="btn btn-danger" routerLink="/">Back</a>
+    </div>
+  </div>
+</div>

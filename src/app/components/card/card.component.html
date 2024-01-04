@@ -1,0 +1,11 @@
+<p>card works!</p>
+<!-- card.component.html -->
+<mat-card class="card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ detail?.id }}</mat-card-title>
+    <mat-card-subtitle>{{ detail?.author }}</mat-card-subtitle>
+    <button mat-button [routerLink]="['/detail', detail?.id]">See</button>
+  </mat-card-header>
+  <img mat-card-image [src]="detail?.download_url" alt="Image" style="width: 50%; height: 50%;">
+</mat-card>

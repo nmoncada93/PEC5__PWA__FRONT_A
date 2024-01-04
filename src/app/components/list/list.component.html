@@ -1,0 +1,129 @@
+<!--
+<div class="container">
+  <h1>Images List</h1>
+  <ul class="list-group">
+    <a *ngFor="let detail of list" [routerLink]="['/detail', detail.id]"
+      class="list-group-item list-group-item-action animate__animated__bounce animate__fadeIn">{{detail.id}} -
+      {{detail.author}}</a>
+  </ul>
+</div>-->
+
+<!--
+<div class="container">
+  <div class="header">
+    <h1>Images List</h1>
+    <div class="view-mode-buttons">
+      <button mat-raised-button color="primary" (click)="switchViewMode('table')">Table</button>
+      <button mat-raised-button color="primary" (click)="switchViewMode('cards')">Cards</button>
+    </div>
+  </div>
+
+  <table mat-table [dataSource]="list" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>ID</th>
+      <td mat-cell *matCellDef="let detail">{{ detail.id }}</td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="author">
+      <th mat-header-cell *matHeaderCellDef>Author</th>
+      <td mat-cell *matCellDef="let detail">{{ detail.author }}</td>
+    </ng-container>
+
+
+
+    <tr mat-header-row *matHeaderRowDef="['id', 'author']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['id', 'author']"></tr>
+  </table>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div class="container">
+  <div class="header">
+    <h1>Images List</h1>
+    <div class="view-mode-buttons">
+      <button mat-icon-button (click)="switchViewMode('table')"><mat-icon>view_list</mat-icon>
+      </button>
+      <button mat-icon-button (click)="switchViewMode('cards')"><mat-icon>view_module</mat-icon>
+      </button>
+    </div>
+  </div>
+
+
+  <div *ngIf="viewMode === 'table'" class="fadeInAnimation">
+    <table mat-table [dataSource]="list" class="mat-elevation-z8">
+
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let detail"><button mat-button [routerLink]="['/detail', detail.id]"> {{ detail.id }}
+          </button></td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="author">
+        <th mat-header-cell *matHeaderCellDef>Author</th>
+        <td mat-cell *matCellDef="let detail">{{ detail.author }}</td>
+      </ng-container>
+
+
+
+
+      <tr mat-header-row *matHeaderRowDef="['id', 'author']"></tr>
+      <tr mat-row *matRowDef="let row; columns: ['id', 'author']"></tr>
+    </table>
+  </div>
+
+
+  <div *ngIf="viewMode === 'cards'" class="mat-elevation-z8 card-grid">
+    <mat-card *ngFor="let detail of list" class="card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ detail.id }}</mat-card-title>
+        <mat-card-subtitle>{{ detail.author }}</mat-card-subtitle>
+        <button mat-button [routerLink]="['/detail', detail.id]">See</button>
+      </mat-card-header>
+      <img mat-card-image src="{{ detail.download_url }}" alt="Image" style="width: 50%; height: 50%;">
+
+    </mat-card>
+  </div>
+</div>-->
+
+<!-- list.component.html -->
+<!-- Vista de "cards" -->
+<div class="container">
+
+  <div class="header">
+    <h1>Images List</h1>
+    <div class="view-mode-buttons">
+      <button mat-icon-button (click)="switchViewMode('table')"><mat-icon>view_list</mat-icon>
+      </button>
+      <button mat-icon-button (click)="switchViewMode('cards')"><mat-icon>view_module</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="viewMode === 'cards'" class="mat-elevation-z8 card-grid">
+    <app-card *ngFor="let detail of list" [detail]="detail"></app-card>
+  </div>
+
+  <!-- list.component.html -->
+  <!-- Vista de "tabla" -->
+  <div *ngIf="viewMode === 'table'" class="fadeInAnimation">
+    <app-grid [list]="list"></app-grid>
+  </div>
+</div>
