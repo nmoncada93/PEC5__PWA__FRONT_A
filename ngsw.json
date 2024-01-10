@@ -1,0 +1,106 @@
+{
+  "configVersion": 1,
+  "timestamp": 1704880469749,
+  "index": "/PEC5__PWA__FRONT_A/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/PEC5__PWA__FRONT_A/favicon.ico",
+        "/PEC5__PWA__FRONT_A/index.html",
+        "/PEC5__PWA__FRONT_A/main.0002cb64edcfac60.js",
+        "/PEC5__PWA__FRONT_A/manifest.webmanifest",
+        "/PEC5__PWA__FRONT_A/polyfills.5cbd18866aa54920.js",
+        "/PEC5__PWA__FRONT_A/runtime.d3d24740a57984e4.js",
+        "/PEC5__PWA__FRONT_A/styles.983c36e7c0448942.css"
+      ],
+      "patterns": [
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.0-beta1\\/dist\\/css\\/bootstrap\\.min\\.css"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/PEC5__PWA__FRONT_A/assets/CSS/animate.css",
+        "/PEC5__PWA__FRONT_A/assets/IMG/informe-lighthouse.PNG",
+        "/PEC5__PWA__FRONT_A/assets/IMG/install-lighthouse.PNG",
+        "/PEC5__PWA__FRONT_A/assets/IMG/lighthouse.png",
+        "/PEC5__PWA__FRONT_A/assets/icons/icon-128x128.png",
+        "/PEC5__PWA__FRONT_A/assets/icons/icon-144x144.png",
+        "/PEC5__PWA__FRONT_A/assets/icons/icon-152x152.png",
+        "/PEC5__PWA__FRONT_A/assets/icons/icon-192x192.png",
+        "/PEC5__PWA__FRONT_A/assets/icons/icon-384x384.png",
+        "/PEC5__PWA__FRONT_A/assets/icons/icon-512x512.png",
+        "/PEC5__PWA__FRONT_A/assets/icons/icon-72x72.png",
+        "/PEC5__PWA__FRONT_A/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "images-api",
+      "patterns": [
+        "https:\\/\\/picsum\\.photos\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/PEC5__PWA__FRONT_A/assets/CSS/animate.css": "1cd1ef926d3aff6887e6c02933e818b8a78db0b0",
+    "/PEC5__PWA__FRONT_A/assets/IMG/informe-lighthouse.PNG": "7be5242bd41836abd7e5f24b4c1a6b96442130bd",
+    "/PEC5__PWA__FRONT_A/assets/IMG/install-lighthouse.PNG": "9427738f4632eed1c668dc8e5ec90d6d6a1c5b94",
+    "/PEC5__PWA__FRONT_A/assets/IMG/lighthouse.png": "e3fe5afe423a553a7d3571ce8bb7ba7f8d1f42c7",
+    "/PEC5__PWA__FRONT_A/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/PEC5__PWA__FRONT_A/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/PEC5__PWA__FRONT_A/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/PEC5__PWA__FRONT_A/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/PEC5__PWA__FRONT_A/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/PEC5__PWA__FRONT_A/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/PEC5__PWA__FRONT_A/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/PEC5__PWA__FRONT_A/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/PEC5__PWA__FRONT_A/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/PEC5__PWA__FRONT_A/index.html": "6433162a8907b054b980bafada575ba39aaaf8ff",
+    "/PEC5__PWA__FRONT_A/main.0002cb64edcfac60.js": "e887cc1e7a1598888e5ab94d0dfd91159634f145",
+    "/PEC5__PWA__FRONT_A/manifest.webmanifest": "239aace3717edd27ba25dce01b20835c6fbf823d",
+    "/PEC5__PWA__FRONT_A/polyfills.5cbd18866aa54920.js": "3ebc65f8d9656923fe613c8a95c725dbe2904f4b",
+    "/PEC5__PWA__FRONT_A/runtime.d3d24740a57984e4.js": "721a55e284ce19b825f7b9632db25d628bbd4064",
+    "/PEC5__PWA__FRONT_A/styles.983c36e7c0448942.css": "1ae88a9aa40c79f8aaeb086b8dd35fbc2da112b6"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
